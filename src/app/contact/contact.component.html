@@ -1,0 +1,36 @@
+<body>
+  <app-navbar></app-navbar>
+  <div [formGroup]="form" class="contact_section layout_padding padding_top_0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="email_box">
+            <div class="input_main">
+              <div class="container">
+                <form action="javascript:void(0)" (submit)="send()">
+                  <div class="Form-Group">
+                    <input formControlName="name" type="text" class="email-bt" placeholder="Full Name">
+                  </div>
+                  <div class="Form-Group">
+                    <input formControlName="from_email" type="email" class="email-bt" placeholder="Email">
+                  </div>
+                  <div class="Form-Group">
+                    <input formControlName="subject" type="text" class="email-bt" placeholder="Subject">
+                  </div>
+                  <div class="Form-Group">
+                    <textarea formControlName="message" class="massage-bt" placeholder="Message" rows="5"></textarea>
+                  </div>
+                  <button type="submit" class="main_bt">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image_6"><img src="assets/images/img-6.png" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</body>

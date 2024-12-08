@@ -1,0 +1,59 @@
+<section class="vh-100"  style="background-color: #f2f7fd;"><form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="assets/images/img-6.png"
+                   alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+                <div class="d-flex align-items-center mb-3 pb-1">
+                  <div class="logo"><a href="index.html"><img src="assets/images/logo.png"></a></div>
+                 
+                </div>
+                
+                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Create new account</h5>
+  <div class="form-outline mb-4">
+    <input type="text" class="form-control" formControlName="name" placeholder="Name" />
+    <div *ngIf="signUpForm.get('name')?.invalid && signUpForm.get('name')?.touched" class="text-danger">
+      Name is required.
+    </div>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input type="email" class="form-control" formControlName="email" placeholder="Email address" />
+    <div *ngIf="signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched" class="text-danger">
+      Valid email is required.
+    </div>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input type="text" class="form-control" formControlName="mobile" placeholder="Mobile number" />
+    <div *ngIf="signUpForm.get('mobile')?.invalid && signUpForm.get('mobile')?.touched" class="text-danger">
+      Mobile number must be 10 digits.
+    </div>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input type="password" class="form-control" formControlName="password" placeholder="Create Password" />
+    <div *ngIf="signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched" class="text-danger">
+      Password must be at least 6 characters.
+    </div>
+  </div>
+
+
+  <input type="submit" class="btn btn-dark btn-lg btn-block" value="sign-up">
+  <p class="mb-5 pb-lg-2" style="color: #393f81;">Do you have an account? 
+    <a href="/login" style="color: #393f81;">Sign in</a>
+  </p>
+              </div>
+            </div>
+          </div>  
+      </div>
+    </div> 
+  </div>
+</div></form>
+</section>

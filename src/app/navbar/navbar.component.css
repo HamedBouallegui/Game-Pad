@@ -1,0 +1,13 @@
+.moo{
+    display: grid;
+    grid-template-areas: 'myArea myArea myArea myArea';
+    gap: 10px;
+    padding: 10px;
+}
+.loo{
+    display: grid;
+    grid-template-areas: 'myArea myArea myArea ';
+    gap: 10px;
+    padding: 10px;
+    
+}

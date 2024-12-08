@@ -1,0 +1,60 @@
+/* Main Cart Section */
+.cart-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.cart-item-img {
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+/* Cart Item Text */
+.cart-item div {
+  flex: 1;
+  padding-left: 15px;
+}
+
+.cart-item p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.cart-item p strong {
+  font-size: 16px;
+}
+
+/* Remove Button Styling */
+.cart-item .btn-danger {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item .btn-danger:hover {
+  background-color: #c0392b;
+}
+
+/* Empty Cart Message */
+.empty-cart {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
